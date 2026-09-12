@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { QUIZ } from "@/lib/quiz";
-import { loadProgress, markDone, patchProgress } from "@/lib/progress";
+import { loadProgress, patchProgress } from "@/lib/progress";
 
 function shuffle<T>(arr: T[]) {
   const a = [...arr];
@@ -20,10 +20,10 @@ export function Quiz() {
   const [correct, setCorrect] = useState(0);
   const [misses, setMisses] = useState<string[]>([]);
   const [done, setDone] = useState(false);
-  const [name, setName] = useState("");
 
   const q = QUIZ[order[step]];
   const total = QUIZ.length;
+  const you = loadProgress().name;
 
   function choose(idx: number) {
     if (picked !== null) return;
@@ -34,13 +34,20 @@ export function Quiz() {
 
   function next() {
     if (step + 1 >= total) {
-      const passed = correct === total;
-      patchProgress({
-        quizScore: correct,
-        quizPassed: passed,
-        name: loadProgress().name,
-      });
-      if (passed) markDone("quiz");
+      const lastOk = picked === q.answer;
+      const score = lastOk ? correct : correct;
+      const passed = score === total;
+      const attempts = (loadProgress().quizAttempts || 0) + 1;
+      patchProgress(
+        {
+          quizScore: score,
+          quizPassed: passed,
+          quizMisses: misses,
+          quizAttempts: attempts,
+          done: passed ? { quiz: true } : {},
+        },
+        "quiz",
+      );
       setDone(true);
       return;
     }
@@ -58,42 +65,23 @@ export function Quiz() {
         {passed ? (
           <>
             <p>
-              100%. You can sit on the floor without leaking a special deal or
-              mixing /refer into an agent book.
+              100%. Doel already has this result under <strong>{you}</strong>.
+              You can sit on the floor without leaking a special deal or mixing
+              /refer into an agent book.
             </p>
             <p>
-              Type your name, screenshot this, send it to Adam. Passing this is
-              not permission to invent copy or mint invites.
+              Passing this is not permission to invent copy or mint invites.
             </p>
-            <div className="row">
-              <input
-                type="text"
-                placeholder="Your name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-              <button
-                className="btn"
-                type="button"
-                onClick={() => patchProgress({ name, quizPassed: true, quizScore: correct })}
-              >
-                Save name
-              </button>
-            </div>
-            {name.trim() || loadProgress().name ? (
-              <p style={{ marginTop: 16 }}>
-                <strong>
-                  {(name.trim() || loadProgress().name).toUpperCase()}
-                </strong>{" "}
-                passed Dope Floor School — 22/22 — NGR only, XOR, geo honest.
-              </p>
-            ) : null}
+            <p style={{ marginTop: 16 }}>
+              <strong>{you.toUpperCase()}</strong> passed Dope Floor School —
+              22/22 — NGR only, XOR, geo honest.
+            </p>
           </>
         ) : (
           <>
             <p>
-              Hire track is 100%. Misses are below. Re-read the module, then
-              retake. Do not send as if you passed.
+              Hire track is 100%. Misses are below — Doel can see them too.
+              Re-read the module, then retake. Do not send as if you passed.
             </p>
             <ul>
               {misses.map((id) => {
@@ -124,6 +112,7 @@ export function Quiz() {
     <div>
       <p className="progress-mini">
         Q {step + 1} / {total} · {correct} correct · 100% to pass
+        {you ? ` · ${you}` : ""}
       </p>
       <h2 style={{ marginTop: 0 }}>{q.q}</h2>
       {q.choices.map((c, idx) => {

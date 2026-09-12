@@ -123,6 +123,44 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .nav a.on .n { color: var(--mark); }
 .nav a .tick { font-family: var(--mono); font-size: 11px; color: var(--good); }
 
+.you {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--mark);
+  padding: 0 8px;
+  margin: 0;
+}
+.gate {
+  max-width: 520px;
+  padding: 12px 0 48px;
+}
+.gate form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+.table-wrap { overflow-x: auto; }
+table.desk {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+table.desk th, table.desk td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--line);
+}
+table.desk th {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.faint { color: var(--faint); font-size: 12px; }
+
 .rail-foot {
   margin-top: auto;
   padding: 10px 8px 0;

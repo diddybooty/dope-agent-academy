@@ -5,10 +5,12 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { MODULES } from "@/lib/modules";
 import { loadProgress, type Progress } from "@/lib/progress";
+import { NameGate } from "./NameGate";
 
 export function Shell({ children }: { children: React.ReactNode }) {
   const path = usePathname();
   const [p, setP] = useState<Progress | null>(null);
+  const desk = path.replace(/\/$/, "") === "/desk";
 
   useEffect(() => {
     const read = () => setP(loadProgress());
@@ -24,6 +26,8 @@ export function Shell({ children }: { children: React.ReactNode }) {
   const doneCount = p ? MODULES.filter((m) => p.done[m.id]).length : 0;
   const pct = Math.round((doneCount / MODULES.length) * 100);
 
+  const body = desk ? children : <NameGate>{children}</NameGate>;
+
   return (
     <div className="app">
       <aside className="rail">
@@ -31,6 +35,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
           <em>Dope · internal</em>
           <strong>Floor school</strong>
         </div>
+        {p?.name ? <p className="you">Signed in as {p.name}</p> : null}
         <div className="meter">
           <div className="bar">
             <i style={{ width: `${pct}%` }} />
@@ -42,7 +47,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
         </div>
         <nav className="nav">
           {MODULES.map((m) => {
-            const on = path === m.href;
+            const on = path === m.href || path === `${m.href}/`;
             const tick = p?.done[m.id];
             return (
               <Link key={m.id} href={m.href} className={on ? "on" : ""}>
@@ -64,7 +69,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
         </div>
       </aside>
       <main className="main">
-        <div className="wrap">{children}</div>
+        <div className="wrap">{body}</div>
       </main>
     </div>
   );
