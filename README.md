@@ -2,7 +2,9 @@
 
 Internal weekend homework for Dope human agents. Not a player promo.
 
-Live: after `npx vercel deploy --prod`.
+**Live:** https://diddybooty.github.io/dope-agent-academy/
+
+Quiz is 100% to pass. Progress stays in the browser (`localStorage`).
 
 ## Local
 
@@ -11,12 +13,14 @@ npm install
 npm run dev
 ```
 
+Dev has no `basePath`. Production GitHub Pages uses `/dope-agent-academy`.
+
 ## Doctrine (do not “improve”)
 
-- Affiliate XOR agent
-- Spoken agent offer: 15% NGR, first business weekday monthly
-- Do not volunteer a higher %
-- No Discord invite in message 1
-- US/UK (and named excluded geos) cannot play
-- Adam = https://t.me/DopeAdam
-- No secrets, invites, classroom IDs, or first-touch DM scripts in this repo
+- Affiliate XOR agent. Nobody is both.
+- Affiliate: https://dope.xyz/refer — 15% of theoretical house edge, claim daily.
+- Agent: 15% NGR spoken, paid first business weekday monthly. No special deals.
+- Do not volunteer a higher agent %. Do not train a ladder as live.
+- US/UK (and AU/FR/NL/ES, …) cannot play. Hunt ICP ≠ deposit.
+- Adam door: https://t.me/DopeAdam. No Discord invite in message 1.
+- Do not invent first-touch DMs, path URLs, or dashboard logins.
