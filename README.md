@@ -19,7 +19,7 @@ Dev has no `basePath`. Production GitHub Pages uses `/dope-agent-academy`.
 
 - Affiliate XOR agent. Nobody is both.
 - Affiliate: https://dope.xyz/refer — 15% of theoretical house edge, claim daily.
-- Agent: 15% NGR spoken, paid first business weekday monthly. No special deals.
+- Agent: 10% NGR spoken to start, paid on the 1st of every month. Higher tiers exist and staff never reveal them.
 - Do not volunteer a higher agent %. Do not train a ladder as live.
 - US/UK (and AU/FR/NL/ES, …) cannot play. Hunt ICP ≠ deposit.
 - Adam door: https://t.me/DopeAdam. No Discord invite in message 1.
