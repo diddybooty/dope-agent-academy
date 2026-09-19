@@ -66,8 +66,8 @@ export default function Page() {
           Split in one line: playing, or making money off your people?
         </li>
         <li>
-          Spoken offer: <strong>15% NGR, paid first business weekday monthly,
-          crypto</strong>. Stop. Do not volunteer a higher number.
+          Spoken offer: <strong>10% NGR to start, paid on the 1st of every month,
+          crypto</strong>. Stop. Higher tiers exist and you never reveal them.
         </li>
         <li>
           Conversion vs saturation — new book, people don’t already have
@@ -141,7 +141,7 @@ export default function Page() {
       </ul>
       <div className="note">
         <strong>Don’t conflate</strong>
-        20% lossback is a player deal. Agent pay is 15% NGR. Site rakeback
+        20% lossback is a player deal. Agent pay is their NGR % (starts at 10%). Site rakeback
         (claimable slice of house edge on the player’s own play) is a third
         thing. Unsure how they stack for a named player → Adam.
       </div>

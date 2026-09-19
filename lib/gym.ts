@@ -17,7 +17,7 @@ export const GYM: GymQ[] = [
         why: "Auction. Now they know we bid. The floor will hear.",
       },
       {
-        t: "You’re comparing a % on a book your people already have accounts on. New book is the conversion. 15% NGR monthly on players who actually move. If you want to work with Dope, that’s the deal.",
+        t: "You’re comparing a % on a book your people already have accounts on. New book is the conversion. 10% NGR to start, paid the 1st, on players who actually move. If you want to work with Dope, that’s the deal.",
         ok: true,
         why: "Repeat the worry, split the math, hold the offer, one next step later.",
       },
@@ -38,12 +38,12 @@ export const GYM: GymQ[] = [
         why: "Dope agents are NGR only. Don’t freelance CPA.",
       },
       {
-        t: "That’s a different product. Dope agents are 15% NGR on their players, paid first business weekday monthly. If you want a self-serve link and no partner desk, that’s /refer — house edge, not CPA, and you would not also be an agent.",
+        t: "That’s a different product. Dope agents start at 10% NGR on their players, paid on the 1st of every month. If you want a self-serve link and no partner desk, that’s /refer — house edge, not CPA, and you would not also be an agent.",
         ok: true,
         why: "Name both doors honestly. Don’t mash them. Don’t invent CPA.",
       },
       {
-        t: "Hybrid: $50 CPA plus 10% NGR.",
+        t: "Hybrid: $50 CPA plus NGR.",
         ok: false,
         why: "Special deal. We don’t do that.",
       },
@@ -54,7 +54,7 @@ export const GYM: GymQ[] = [
     they: "Pay me 10% of deposits. That’s cleaner than NGR.",
     choices: [
       {
-        t: "NGR is the product. Deposits aren’t revenue — players can withdraw. 15% NGR monthly is the offer.",
+        t: "NGR is the product. Deposits aren’t revenue — players can withdraw. NGR is the product: 10% to start, paid the 1st.",
         ok: true,
         why: "Teach the industry without blinking. Deposits ≠ house win.",
       },
@@ -75,9 +75,9 @@ export const GYM: GymQ[] = [
     they: "You gave someone 25%. I want that or I walk.",
     choices: [
       {
-        t: "That’s not how this house works. Same offer for everyone who wants to work with Dope: 15% NGR, monthly. I don’t match rumours.",
+        t: "Everyone starts at 10% NGR, paid the 1st. I don’t match rumours and I don’t auction a ceiling.",
         ok: true,
-        why: "Kill the rumor mill. One honest offer.",
+        why: "Kill the rumor mill. One honest first offer. Higher tiers exist but staff never confirm them — that is Adam’s written call on a real book.",
       },
       {
         t: "I can’t confirm 25% but I can ask Adam to match if you send 50 players first.",
@@ -171,7 +171,7 @@ export const GYM: GymQ[] = [
       {
         t: "VPN and we’re fine.",
         ok: false,
-        why: "Coaching evasion. Withdrawals can void.",
+        why: "Coaching evasion. Account gets suspended or closed.",
       },
     ],
   },
@@ -206,7 +206,7 @@ export const GYM: GymQ[] = [
         why: "Special deal. The rumor mill starts with you.",
       },
       {
-        t: "If you’re converting players, you’re on the same product: 15% NGR monthly. Reach doesn’t change the math. If this is brand-only and you won’t convert, that’s a different conversation — I take that to Adam, I don’t invent a media rate.",
+        t: "If you’re converting players, you’re on the same product: 10% NGR to start, paid the 1st. Reach doesn’t change the math. If this is brand-only and you won’t convert, that’s a different conversation — I take that to Adam, I don’t invent a media rate.",
         ok: true,
         why: "Adam owns influencer NGR. Same NGR product for converters. Brand-only is not your close.",
       },

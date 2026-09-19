@@ -79,15 +79,15 @@ export default function Page() {
         <strong>NGR</strong> (net gaming revenue) is GGR after the costs that
         sit on that play — typically bonuses, payment fees, sometimes taxes /
         chargebacks, depending on the operator. There is no single global NGR
-        formula. That is why you never compare “their 35%” to “our 15%” as one
+        formula. That is why you never compare “their 35%” to “our 10%” as one
         number.
       </p>
       <div className="note">
         <strong>Dope lock</strong>
         Agents are paid on <em>NGR of that agent’s players</em> — not deposits,
         not signups, not Discord ranks. Quiet book = quiet payday. That is not a
-        bug. Exact deductions, if they ask for a legal definition: Adam, don’t
-        invent a formula. Affiliate pay is a different product (share of
+        bug. Dope’s NGR = gross gaming revenue on that agent’s players minus
+        player bonuses. Nothing else comes off. Affiliate pay is a different product (share of
         theoretical house edge on /refer), not NGR.
       </div>
       <p>
@@ -159,7 +159,7 @@ export default function Page() {
         <li>Dope does not stack /refer house-edge on top of agent NGR.</li>
         <li>
           Spoken offer for anyone converting players (community owner or
-          influencer): <strong>15% NGR, first business weekday of the month,
+          influencer): <strong>10% NGR to start, paid on the 1st of every month,
           crypto</strong>.
         </li>
       </ul>

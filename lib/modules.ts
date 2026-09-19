@@ -31,7 +31,7 @@ export const MODULES: {
     num: "01",
     title: "How this industry actually pays",
     time: "25 min",
-    blurb: "GGR, NGR, CPA, saturation — why 15% on a new book beats a shopped ceiling.",
+    blurb: "GGR, NGR, CPA, saturation — why 10% on a new book beats a shopped ceiling.",
   },
   {
     id: "split",
@@ -71,7 +71,7 @@ export const MODULES: {
     num: "06",
     title: "NGR objection gym",
     time: "30 min",
-    blurb: "Everyone who wants to work with Dope can be onboarded on NGR. No special deals.",
+    blurb: "Everyone who wants to work with Dope can be onboarded on NGR. Staff never reveal a higher tier.",
   },
   {
     id: "drill",

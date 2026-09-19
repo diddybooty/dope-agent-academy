@@ -118,12 +118,12 @@ export default function Page() {
                 15% of theoretical house edge on referrals’ play (live rate on
                 the Refer page)
               </td>
-              <td>NGR only. No house-edge cut</td>
+              <td>NGR only (start 10%). No house-edge cut</td>
             </tr>
             <tr>
               <td>When</td>
               <td>Claim on /refer (staff lock: daily)</td>
-              <td>First business weekday of every month, crypto</td>
+              <td>The 1st of every month, crypto</td>
             </tr>
             <tr>
               <td>Who</td>

@@ -17,7 +17,7 @@ export default function Page() {
         <strong>Not a script pack</strong>
         First-touch copy is still owned by Adam/Doel. If you don’t have approved
         words, you don’t invent a DM. You learn the doors, the offer, the site,
-        and how to hold 15% NGR when they ask for a special.
+        and how to hold 10% NGR when they ask for a special.
       </div>
 
       <h2>What “done” means</h2>
@@ -32,7 +32,7 @@ export default function Page() {
         </li>
         <li>
           You can onboard anyone who actually wants to work with Dope on{" "}
-          <strong>15% NGR, paid first business weekday monthly</strong> — no
+          <strong>10% NGR to start, paid on the 1st of every month</strong> — no
           CPA, no % of deposits, no matching another house, no dual book with
           /refer.
         </li>
@@ -76,7 +76,7 @@ export default function Page() {
           only, monthly. A partner cannot wear both.
         </li>
         <li>
-          <strong>Spoken offer is 15% NGR monthly.</strong> Do not volunteer a
+          <strong>Spoken offer is 10% NGR, paid the 1st.</strong> Do not volunteer a
           higher number. Do not auction.
         </li>
         <li>

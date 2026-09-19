@@ -15,7 +15,7 @@ export const DOORS: { id: Door; label: string; hint: string }[] = [
   {
     id: "agent",
     label: "Agent (NGR)",
-    hint: "They already host people. 15% NGR monthly. Adam yes. Not /refer.",
+    hint: "They already host people. 10% NGR to start, paid the 1st. Adam yes. Not /refer.",
   },
   {
     id: "affiliate",
@@ -81,7 +81,7 @@ export const CASES: Case[] = [
     who: "Kick slots streamer. Chat already gambles on stream.",
     line: "I’ll overlay Dope if you make it worth posting.",
     answer: "agent",
-    why: "Casino-space creator who can convert is agent-style NGR (Adam’s influencer NGR desk). Same 15%, not a custom overlay fee unless Adam says brand-only.",
+    why: "Casino-space creator who can convert is agent-style NGR (Adam’s influencer NGR desk). Same 10% start, not a custom overlay fee unless Adam says brand-only.",
   },
   {
     id: "fitness",
@@ -116,6 +116,6 @@ export const CASES: Case[] = [
     who: "Confirmed agent asking if their friend who hosts roulette can join.",
     line: "Can I put him under me?",
     answer: "agent",
-    why: "Still an agent conversation — but sub-agents are last, after their own book is live. Don’t invent a sub-% . Adam / the team. Don’t send the friend to /refer.",
+    why: "Still an agent conversation — but sub-agents are last, after their own book is live. The override is 20% of the sub-agent’s lifetime earnings, three layers. Adam / the team set it up. Don’t send the friend to /refer.",
   },
 ];

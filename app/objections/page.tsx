@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <article className="prose">
       <p className="kicker">06 · Objections</p>
-      <h1>Hold 15%. Onboard everyone who wants to work.</h1>
+      <h1>Hold 10%. Onboard everyone who wants to work.</h1>
       <p className="lede">
         Special deals are how agent programs die. Your superpower is making NGR
         feel like the adult offer — not a consolation prize.
@@ -25,7 +25,7 @@ export default function Page() {
         </li>
         <li>
           <strong>Don’t lead with a bigger number.</strong> Window-shoppers
-          collect ceilings. 15% monthly is the offer.
+          collect ceilings. 10% to start, paid the 1st, is the offer.
         </li>
         <li>
           <strong>Move to conversions</strong> if the fight is NGR. New book vs
@@ -67,8 +67,8 @@ export default function Page() {
             <tr>
               <td>Higher %</td>
               <td>
-                Conversion story. 15% NGR monthly. Stop. Already live and
-                converting → whisper Adam, don’t tell them a higher number
+                Conversion story. 10% NGR to start. Stop. Already live and
+                converting → whisper Adam, don’t tell them a higher tier
                 exists.
               </td>
               <td>Auction. Wink. “Up to.”</td>
@@ -90,13 +90,13 @@ export default function Page() {
             </tr>
             <tr>
               <td>“What you gave him”</td>
-              <td>Same offer for everyone who works with Dope. I don’t match rumours.</td>
+              <td>Everyone starts at 10%. I don’t match rumours or auction a ceiling.</td>
               <td>Confirm a hidden ladder</td>
             </tr>
             <tr>
               <td>Influencer custom</td>
               <td>
-                Converting = same 15% NGR. Brand-only = Adam, not your close.
+                Converting = same 10% NGR start. Brand-only = Adam, not your close.
               </td>
               <td>NGR + posting fee + /refer</td>
             </tr>
